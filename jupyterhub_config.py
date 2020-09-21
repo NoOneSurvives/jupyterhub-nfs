@@ -55,6 +55,6 @@ c.JupyterHub.services = [
     {
         'name': 'cull-idle',
         'admin': True,
-        'command': [sys.executable, '-m', 'jupyterhub_idle_culler', '--timeout=600'],
+        'command': [sys.executable, '-m', 'jupyterhub_idle_culler', '--timeout=3600'],
     }
 ]
