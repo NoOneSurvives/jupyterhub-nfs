@@ -47,6 +47,8 @@ c.Spawner.pre_spawn_hook = create_dir_hook
 # debug-logging for testing
 import logging
 c.JupyterHub.log_level = logging.DEBUG
+# Kill user server on logout
+c.JupyterHub.shutdown_on_logout = True
 # Autostop not using containers
 import sys
 c.JupyterHub.services = [
